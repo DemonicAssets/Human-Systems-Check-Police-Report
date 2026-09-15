@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#06111b" />
+  <title>HSC // 3D Subject Viewer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page-model">
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header compact">
+    <div class="header-left micro-copy">SUBJECT ANALYSIS // LIVE RENDER</div>
+    <a class="brand" href="index.html">
+      <span class="brand-title">HSC</span>
+      <span class="brand-subtitle">Human Systems Check</span>
+    </a>
+    <img class="robot-logo" src="assets/robot-logo.png" alt="HSC robot logo" />
+  </header>
+
+  <nav class="top-nav" aria-label="Primary navigation">
+    <a class="nav-chip" href="index.html"><span>01</span> Home</a>
+    <a class="nav-chip active" href="model.html"><span>02</span> 3D Page</a>
+    <a class="nav-chip" href="story.html"><span>03</span> Story</a>
+  </nav>
+
+  <main class="model-layout">
+    <aside class="data-panel wanted-panel">
+      <p class="section-tag danger">// WANTED //</p>
+      <h1>SUBJECT #7742-A</h1>
+      <img class="small-portrait" src="assets/subject-portrait.jpg" alt="Subject 7742-A" />
+      <dl class="spec-list">
+        <div><dt>Classification</dt><dd>Augmented Human</dd></div>
+        <div><dt>Threat Level</dt><dd class="danger">High</dd></div>
+        <div><dt>Bounty</dt><dd class="danger">$10,000</dd></div>
+        <div><dt>Status</dt><dd>At Large</dd></div>
+        <div><dt>Alias</dt><dd>The Half Machine</dd></div>
+      </dl>
+    </aside>
+
+    <section class="viewer-panel">
+      <div class="viewer-heading">
+        <div>
+          <p class="section-tag">3D VIEWER</p>
+          <h1>BABYLON.JS LIVE RENDER</h1>
+        </div>
+        <div class="live-pill"><span></span> LIVE</div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="renderCanvas" aria-label="Interactive Babylon.js 3D model viewer"></canvas>
+        <div class="canvas-help">
+          <span>DRAG: ROTATE</span>
+          <span>SCROLL: ZOOM</span>
+          <span>RIGHT DRAG: PAN</span>
+        </div>
+        <div class="scan-bar" aria-hidden="true"></div>
+      </div>
+
+      <div class="viewer-controls">
+        <button type="button" data-action="orbit">AUTO ORBIT</button>
+        <button type="button" data-action="wireframe">WIREFRAME</button>
+        <button type="button" data-action="scan">SCAN</button>
+        <button type="button" data-action="reset">RESET VIEW</button>
+      </div>
+    </section>
+
+    <aside class="data-panel diagnostics-panel">
+      <p class="section-tag">MODEL DATA</p>
+      <dl class="spec-list">
+        <div><dt>Subject ID</dt><dd>7742-A</dd></div>
+        <div><dt>Height</dt><dd>1.83 m</dd></div>
+        <div><dt>Mass</dt><dd>78 kg</dd></div>
+        <div><dt>Neural Link</dt><dd class="success">Detected</dd></div>
+        <div><dt>Ocular Augment</dt><dd class="success">Detected</dd></div>
+        <div><dt>Synthetic Tissue</dt><dd>Partial</dd></div>
+      </dl>
+
+      <div class="diagnostic-box">
+        <div class="diag-title">SYSTEM SCAN</div>
+        <div class="meter"><span style="width: 92%"></span></div>
+        <div class="meter"><span style="width: 78%"></span></div>
+        <div class="meter"><span style="width: 64%"></span></div>
+        <p id="scanText">Awaiting scan command.</p>
+      </div>
+
+      <div class="model-note">
+        <strong>Replace the demo model</strong>
+        <p>Put your own <code>.glb</code> file in <code>assets/</code>, then use Babylon's <code>SceneLoader.Append()</code> in <code>model.js</code>.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <span>HSC CIVIL PROTECTION DIVISION</span>
+    <span class="footer-motto">INTERACTIVE SUBJECT ANALYSIS</span>
+    <span id="clock">--:--:--</span>
+  </footer>
+
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="app.js"></script>
+  <script src="model.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#06111b" />
+  <title>HSC // Human Systems Check</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page-home">
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-left micro-copy">CIVIL PROTECTION // ACTIVE NETWORK</div>
+
+    <a class="brand" href="index.html" aria-label="HSC home">
+      <span class="brand-title">HSC</span>
+      <span class="brand-subtitle">Human Systems Check</span>
+    </a>
+
+    <img class="robot-logo" src="assets/robot-logo.png" alt="HSC robot logo" />
+  </header>
+
+  <nav class="top-nav" aria-label="Primary navigation">
+    <a class="nav-chip active" href="index.html"><span>01</span> Home</a>
+    <a class="nav-chip" href="model.html"><span>02</span> 3D Page</a>
+    <a class="nav-chip" href="story.html"><span>03</span> Story</a>
+  </nav>
+
+  <main class="home-shell">
+    <aside class="side-panel left-panel">
+      <p class="panel-kicker">CIVIL SAFETY PROTOCOL</p>
+      <h2>Monitor.<br>Identify.<br>Apprehend.<br>Protect.</h2>
+      <div class="divider"></div>
+      <p>Human + AI<br>A safer tomorrow</p>
+      <div class="status-block">
+        <span class="status-dot"></span>
+        <span>GLOBAL THREAT DATABASE ONLINE</span>
+      </div>
+    </aside>
+
+    <section class="subject-zone" aria-labelledby="wanted-title">
+      <div class="hud-label hud-label-left">SUBJECT<br>#7742-A</div>
+      <div class="hud-label hud-label-right danger">WANTED</div>
+
+      <a class="portrait-link" href="model.html" aria-label="Open interactive Babylon.js 3D subject viewer">
+        <div class="portrait-frame">
+          <img src="assets/subject-portrait.jpg" alt="Fictional half-human, half-AI wanted subject" />
+          <span class="corner c1"></span><span class="corner c2"></span>
+          <span class="corner c3"></span><span class="corner c4"></span>
+          <div class="crosshair crosshair-x"></div>
+          <div class="crosshair crosshair-y"></div>
+          <div class="portrait-hover">OPEN 3D SUBJECT VIEWER</div>
+        </div>
+      </a>
+
+      <a id="wanted-title" class="bounty-button" href="story.html">
+        <span class="chev">»</span>
+        <span>
+          <strong>WANTED BOUNTY $10,000</strong>
+          <small>OPEN CASE FILE</small>
+        </span>
+        <span class="chev">«</span>
+      </a>
+
+      <div class="subject-meta">
+        <span>CLASSIFICATION: AUGMENTED HUMAN</span>
+        <span>STATUS: AT LARGE</span>
+        <span>THREAT INDEX: 09</span>
+      </div>
+    </section>
+
+    <aside class="side-panel right-panel">
+      <p class="panel-kicker">HSC DIRECTIVE</p>
+      <h2>Justice<br>Adapts<br>Always.</h2>
+      <div class="divider"></div>
+      <p>Human<br>Augmented<br>Synthetic<br>All accountable</p>
+      <div class="mini-readout">
+        <span>NETWORK</span><strong>ONLINE</strong>
+        <span>CASE</span><strong>7742-A</strong>
+        <span>ZONE</span><strong>12</strong>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <span>HSC CIVIL PROTECTION DIVISION</span>
+    <span class="footer-motto">REAL PEOPLE · REAL THREATS · REAL SOLUTIONS</span>
+    <span id="clock">--:--:--</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

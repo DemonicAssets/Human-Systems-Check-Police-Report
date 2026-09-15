@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#06111b" />
+  <title>HSC // Subject Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page-story">
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header compact">
+    <div class="header-left micro-copy">CASE FILE // ACCESS GRANTED</div>
+    <a class="brand" href="index.html">
+      <span class="brand-title">HSC</span>
+      <span class="brand-subtitle">Human Systems Check</span>
+    </a>
+    <img class="robot-logo" src="assets/robot-logo.png" alt="HSC robot logo" />
+  </header>
+
+  <nav class="top-nav" aria-label="Primary navigation">
+    <a class="nav-chip" href="index.html"><span>01</span> Home</a>
+    <a class="nav-chip" href="model.html"><span>02</span> 3D Page</a>
+    <a class="nav-chip active" href="story.html"><span>03</span> Story</a>
+  </nav>
+
+  <main class="story-layout">
+    <section class="story-hero panel-frame">
+      <div class="story-photo-wrap">
+        <img src="assets/subject-portrait.jpg" alt="Subject 7742-A" />
+        <span class="wanted-stamp">WANTED</span>
+      </div>
+
+      <article class="case-copy">
+        <p class="section-tag">HSC // CASE FILE #7742-A</p>
+        <h1>SUBJECT STORY</h1>
+        <p class="lead">A human mind. A machine advantage.</p>
+        <p>
+          Subject #7742-A was once an HSC systems engineer assigned to experimental neural-interface research. After an unauthorized augmentation procedure, the subject disappeared with prototype technology and restricted network credentials.
+        </p>
+        <p>
+          HSC intelligence later linked the subject to coordinated intrusions against city infrastructure, classified data theft, surveillance tampering, and the remote takeover of automated security systems. Investigators believe the augmentation allows direct neural interaction with machines at a speed normal operators cannot match.
+        </p>
+        <p>
+          The subject is currently listed as at large. HSC field units are instructed to identify, report, and contain rather than approach without specialized support. The $10,000 bounty applies to information leading to capture within this fictional case file.
+        </p>
+
+        <blockquote>“He doesn't just hack systems. He thinks inside them.”</blockquote>
+      </article>
+
+      <aside class="bounty-card">
+        <span>WANTED BOUNTY</span>
+        <strong>$10,000</strong>
+        <small>SUBJECT AT LARGE</small>
+        <dl class="spec-list">
+          <div><dt>Subject ID</dt><dd>#7742-A</dd></div>
+          <div><dt>Classification</dt><dd>Augmented Human</dd></div>
+          <div><dt>Threat</dt><dd class="danger">High</dd></div>
+          <div><dt>Last Seen</dt><dd>Neo Harbor / Sector 7</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="timeline panel-frame">
+      <div class="section-heading">
+        <p class="section-tag">TIMELINE // KEY EVENTS</p>
+      </div>
+      <div class="timeline-grid">
+        <article><span>2019</span><h3>HSC ENGINEER</h3><p>Joined advanced systems research and human-machine interface development.</p></article>
+        <article><span>2021</span><h3>ILLEGAL AUGMENTATION</h3><p>Underwent an unauthorized cybernetic integration procedure and vanished from official records.</p></article>
+        <article><span>2022</span><h3>NETWORK BREACHES</h3><p>Linked to repeated infrastructure and data-center intrusions across multiple districts.</p></article>
+        <article><span>2023</span><h3>HSC ATTACK</h3><p>Security records tie the subject to a coordinated breach of an HSC surveillance hub.</p></article>
+        <article><span>2024–PRESENT</span><h3>AT LARGE</h3><p>Current location unknown. False identities and synthetic biometrics are suspected.</p></article>
+      </div>
+    </section>
+
+    <section class="records-grid">
+      <article class="record-card panel-frame">
+        <p class="section-tag">CHARGES // ACTIVE WARRANTS</p>
+        <ul>
+          <li>Cyberterrorism</li>
+          <li>Unauthorized Human Augmentation</li>
+          <li>HSC System Infiltration</li>
+          <li>Theft of Classified Data</li>
+          <li>Sabotage of Automated Infrastructure</li>
+        </ul>
+      </article>
+
+      <article class="record-card panel-frame">
+        <p class="section-tag">INCIDENT NOTES // FIELD REPORTS</p>
+        <div class="incident"><time>2024.02.17</time><span>Civilian power-grid disruption // Neo Harbor.</span></div>
+        <div class="incident"><time>2023.11.14</time><span>HSC surveillance breach // multiple systems compromised.</span></div>
+        <div class="incident"><time>2023.06.03</time><span>Armed resistance during attempted apprehension.</span></div>
+        <div class="incident"><time>2022.12.11</time><span>Financial network intrusion // transfers under investigation.</span></div>
+      </article>
+
+      <article class="record-card panel-frame">
+        <p class="section-tag">EVIDENCE // RECOVERED</p>
+        <div class="evidence-grid">
+          <div><span>01</span><strong>Surveillance Frame</strong><small>Visual ID match</small></div>
+          <div><span>02</span><strong>Neural Interface</strong><small>Prototype hardware</small></div>
+          <div><span>03</span><strong>Encrypted Logs</strong><small>Partial recovery</small></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>HSC CIVIL PROTECTION DIVISION</span>
+    <span class="footer-motto">CASE FILE #7742-A // CLASSIFIED</span>
+    <span id="clock">--:--:--</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
