@@ -53,3 +53,8 @@ and incident sections.
 EDITING THE BOUNTY
 ------------------
 Search the HTML files for "$10,000" and replace it with any amount you want.
+
+
+CREATED BY SECTION
+------------------
+To change the creator names shown on the INSPO page, open creators.js and edit the name and role values inside window.HSC_CREATORS. You can add or remove entries as needed.
